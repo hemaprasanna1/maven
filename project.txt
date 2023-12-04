@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"></script>
+        <script>
+            function sub(){
+                var n1=document.getElementById("num1").value;
+                var n2=document.getElementById("num2").value;
+                var n=n1-n2
+                document.write(n);
+              }
+              function mul(){
+                var n1=document.getElementById("num1").value;
+                var n2=document.getElementById("num2").value;
+                var n=n1*n2
+                document.write(n);
+              }
+              function add(){
+                var n1=document.getElementById("num1").value;
+                var n2=document.getElementById("num2").value;
+                var n=parseInt(n1)+parseInt(n2)
+                document.write(n);
+              }
+              function div(){
+                var n1=document.getElementById("num1").value;
+                var n2=document.getElementById("num2").value;
+                var n=n1/n2
+                document.write(n);
+              }
+        </script>
+    </head>
+    <body class="container">
+        <div>
+            <label>ENTER FIRST NUMBER</label>
+            <input type="num" id="num1">
+        </div>
+        <div>
+            <label>ENTER SECOND NUMBER</label>
+             <input type="num" id="num2">
+        </div>
+        <button type="button" onclick="sub()">sub</button>
+        <button type="button" onclick="mul()">mul</button>
+        <button type="button" onclick="add()">add</button>
+        <button type="button" onclick="div()">div</button>
+    </body>
+</html>
